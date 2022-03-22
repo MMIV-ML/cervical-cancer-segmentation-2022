@@ -14,7 +14,7 @@ class PickleImage(torch.Tensor, metaclass=BypassNewMeta):
     @classmethod
     def create(cls, fn:(Path,str, torch.Tensor), **kwargs)->None:
         if isinstance(fn, torch.Tensor): return cls(fn)
-        if isinstance(fn, str) and '.pickle' in fn: return cls(load_pickle(fn))
+        if isinstance(fn, str): return cls(load_pickle(fn))
 
 def PickleMaskBlock(): return TransformBlock(type_tfms=PickleImage.create) 
 
