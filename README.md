@@ -1,3 +1,4 @@
+<b>[Update November 2022]</b> This source code has been updated to work with current version of [fastMONAI](https://github.com/MMIV-ML/fastMONAI) 
 Fully automatic whole-volume tumor segmentation in cervical cancer
 ==============================
 <img src="figs/workflow.png"/>
